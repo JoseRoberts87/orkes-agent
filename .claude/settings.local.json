@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "WebFetch(domain:orkes.io)",
+      "WebFetch(domain:orkes-portal-prod.orkesconductor.io)",
+      "Bash(npm init:*)",
+      "Bash(npm install:*)",
+      "Bash(npm search:*)",
+      "Bash(node:*)",
+      "Bash(DEMO_MODE=true npm run demo)",
+      "Bash(rm:*)",
+      "Bash(npm run demo:*)",
+      "Bash(npm start)",
+      "Bash(npm run server:*)",
+      "Bash(chmod:*)"
+    ],
+    "deny": []
+  }
+}

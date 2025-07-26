@@ -1,0 +1,4 @@
+[submodule "hack_context"]
+	path = hack_context
+	url = git@github.com:mspremulli/hackathon-07-26-2025.git
+	

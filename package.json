@@ -1,0 +1,24 @@
+{
+  "name": "orkes-agent",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node src/index.js",
+    "server": "node src/server.js",
+    "demo": "node src/demo-simulator.js",
+    "demo:continuous": "node src/demo-simulator.js continuous",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@io-orkes/conductor-javascript": "^2.1.4",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.1",
+    "express": "^5.1.0"
+  }
+}
