@@ -6,6 +6,8 @@
   "scripts": {
     "start": "node src/index.js",
     "server": "node src/server.js",
+    "webhook:mongo": "node src/webhooks/mongodb-webhook-service.js",
+    "register-workflows": "node src/scripts/register-workflows.js",
     "demo": "node src/demo-simulator.js",
     "demo:continuous": "node src/demo-simulator.js continuous",
     "test": "echo \"Error: no test specified\" && exit 1"
