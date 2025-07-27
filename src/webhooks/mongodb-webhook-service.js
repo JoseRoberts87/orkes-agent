@@ -6,7 +6,7 @@ dotenv.config();
 
 // MongoDB configuration
 const MONGODB_URI = process.env.MONGODB_URI || 'mongodb://localhost:27017';
-const MONGODB_DATABASE = process.env.MONGODB_DATABASE || 'coo_assistant';
+const MONGODB_DATABASE = process.env.MONGODB_DB_NAME || 'coo_assistant';
 const ORKES_WEBHOOK_URL = process.env.ORKES_WEBHOOK_URL; // Get this from Orkes webhook setup
 const WEBHOOK_SECRET = process.env.WEBHOOK_SECRET || 'your-webhook-secret';
 
@@ -23,7 +23,8 @@ class MongoDBWebhookService {
       reviews: process.env.MONGODB_REVIEWS_COLLECTION || 'reviews',
       metrics: process.env.MONGODB_METRICS_COLLECTION || 'metrics',
       sales: process.env.MONGODB_SALES_COLLECTION || 'sales',
-      customers: process.env.MONGODB_CUSTOMERS_COLLECTION || 'customers'
+      customers: process.env.MONGODB_CUSTOMERS_COLLECTION || 'customers',
+      feedbacks: process.env.MONGODB_FEEDBACKS_COLLECTION || 'feedbacks'
     };
   }
 

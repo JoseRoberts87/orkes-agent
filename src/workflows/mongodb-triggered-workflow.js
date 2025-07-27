@@ -1,6 +1,6 @@
 export const mongodbTriggeredWorkflow = {
   name: 'mongodb_triggered_analysis',
-  version: 1,
+  version: 2,
   description: 'Workflow triggered by MongoDB data changes via webhooks',
   tasks: [
     {
@@ -19,7 +19,7 @@ export const mongodbTriggeredWorkflow = {
       type: 'SUB_WORKFLOW',
       subWorkflowParam: {
         name: 'coo_assistant_analysis',
-        version: 1
+        version: 2
       },
       inputParameters: {
         startup_id: '${workflow.input.startup_id}',
@@ -38,7 +38,7 @@ export const mongodbTriggeredWorkflow = {
 // Batch processing workflow for handling multiple changes
 export const mongodbBatchWorkflow = {
   name: 'mongodb_batch_analysis',
-  version: 1,
+  version: 2,
   description: 'Process multiple MongoDB changes as a batch',
   tasks: [
     {
@@ -66,7 +66,7 @@ export const mongodbBatchWorkflow = {
       type: 'SUB_WORKFLOW',
       subWorkflowParam: {
         name: 'coo_assistant_analysis',
-        version: 1
+        version: 2
       },
       inputParameters: {
         startup_id: '${workflow.input.startup_id}',

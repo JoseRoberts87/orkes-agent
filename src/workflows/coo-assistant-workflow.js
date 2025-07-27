@@ -1,6 +1,6 @@
 export const cooAssistantWorkflow = {
   name: 'coo_assistant_analysis',
-  version: 1,
+  version: 2,
   description: 'Analyzes business data and provides AI recommendations',
   tasks: [
     {
@@ -32,7 +32,12 @@ export const cooAssistantWorkflow = {
             data: '${collect_data.output.metrics}'
           }
         }]
-      ],
+      ]
+    },
+    {
+      name: 'join_analysis',
+      taskReferenceName: 'join_analysis',
+      type: 'JOIN',
       joinOn: ['review_analysis', 'product_analysis']
     },
     {
